@@ -11,6 +11,6 @@ func main() {
 		b = 4
 	)
 	c := math.Sqrt(a*a + b*b)
-	fmt.Printf("%.1f", c)  //result:5.0%
+	fmt.Printf("%.1f", c)   //result:5.0%
 	fmt.Printf("%.1f\n", c) //result:5.0  - only  mac os
 }
