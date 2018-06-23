@@ -11,13 +11,8 @@ type Student struct {
 	Name string
 }
 
-var stus = make(map[string]Student)
+var students = make(map[string]Student)
 
-func addStus(stu student){
-	var id int
-	var name string
-
-}
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
@@ -40,4 +35,13 @@ func main() {
 
 		}
 	}
+}
+
+func add(id int,name string){
+	if _,ok:=students[name]; ok{
+		fmt.Printf("student %s has already extisted!",name)
+	} else{
+		students[name]=Student{Id:id,Name:name}
+	}
+
 }
